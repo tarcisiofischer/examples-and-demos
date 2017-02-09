@@ -1,0 +1,5 @@
+    Human& operator=(const Human& other)
+    {
+        std::cout << "Operator=\n";
+        return *this;
+    }

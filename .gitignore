@@ -1,0 +1,9 @@
+*.log
+*.tlog
+Debug/
+*.vcxproj
+*.vcxproj.filters
+*.sln
+*.sdf
+*.suo
+*.opensdf
