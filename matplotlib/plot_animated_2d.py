@@ -4,8 +4,8 @@ import matplotlib.animation as animation
 
 figure = plt.figure()
 
-x = np.arange(-200, 200) * .1
-y = np.arange(-200, 200).reshape(-1, 1) * .1
+x = np.arange(-200, 200) * .2
+y = np.arange(-200, 200).reshape(-1, 1) * .2
 base = np.hypot(x, y)
 
 def imshow_func(frame, *fargs):
@@ -20,7 +20,6 @@ def pcolormesh_func(frame, *fargs):
 def gen_function_generator():
     for add in np.arange(20):
         yield base + add
-
 
 # This was the only way I could think of to avoid memory leaking
 _smart = []
